@@ -1,0 +1,5 @@
+# Flask用仮想環境を自動で有効化
+$venvPath = "$HOME\OneDrive\デスクトップ\practice_flask\my_venv\Scripts\Activate.ps1"
+if (Test-Path $venvPath) {
+    & $venvPath
+}

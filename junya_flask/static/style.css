@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', 'Hiragino Kaku Gothic ProN', sans-serif;
+    background-color: #e3f2fd; /* 明るいブルー系に変更 */
+    color: #212121; /* より濃い文字色でコントラスト強化 */
+    margin: 0;
+    padding: 2em;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 2em;
+    color: #1e88e5; /* 鮮やかなブルー */
+    text-align: center;
+    margin-bottom: 0.5em;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #ffca28; /* 明るいイエローでアクセント */
+    margin: 0.5em auto 0;
+    border-radius: 2px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #1565c0; /* 深みのあるブルー */
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border-left: 5px solid #ffca28; /* イエローのラインで鮮やかに */
+    padding-left: 0.5em;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 1em;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08); /* 少し強めの影 */
+    text-align: center;
+}
+
+th {
+    background-color: #bbdefb; /* 明るいブルー系 */
+    color: #0d47a1; /* 濃いブルーで強調 */
+    font-weight: bold;
+}
+
+tr:hover td {
+    background-color: #e3f2fd; /* ホバー時も鮮やかに */
+    transition: background-color 0.3s ease;
+}
+
+a {
+    display: inline-block;
+    margin-top: 2em;
+    padding: 0.6em 1.2em;
+    background-color: #1e88e5; /* 鮮やかなブルー */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"] {
+  background-color: #2196F3;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+a:hover {
+    background-color: #1565c0; /* ホバー時に深みのあるブルーへ */
+}

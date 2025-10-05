@@ -1,0 +1,8 @@
+# 仮想環境を無視
+venv/
+my_venv/
+
+# その他よく無視するもの
+__pycache__/
+*.pyc
+.env

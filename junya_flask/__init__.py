@@ -5,4 +5,4 @@ import junya_flask.main
 
 from junya_flask import db
 
-db.create_books_table()
+db.init_db()

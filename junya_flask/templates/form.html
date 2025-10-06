@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>junya書店</h1>
-        <form method="post" action="{{ url_for('register') }}">
+        <form id="registerForm" method="post">
         <table border="1">
             <tr>
                 <th>入荷日</th>
@@ -33,8 +33,12 @@
         </table>
         <br>
         <input type="submit" value="登録">
-</form>
+        </form>
         
-        
-    </body>
+          
+
+    <!-- JavaScriptの読み込み -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>  
 </html>

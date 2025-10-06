@@ -3,7 +3,6 @@ import sqlite3
 DATABASE = "database.db"
 
 
-def create_books_table():
-    con = sqlite3.connect(DATABASE)
-    con.execute("CREATE TABLE IF NOT EXISTS books (title,price,arrival_day)")
-    con.close()
+def init_db():
+    with sqlite3.connect(DATABASE) as con:
+        con.executescript(open("schema.sql", encoding="utf-8").read())

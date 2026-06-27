@@ -1,5 +1,6 @@
 # Flask Project
 
+教材を元に作成しています。
 アプリのスクリーンショットです。
 
 ![トップページ](docs/screenshot1.png)
